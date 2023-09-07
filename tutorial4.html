@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            form {
+                width: 25em;
+                border: 1px solid black;
+                padding: 1em;
+            }
+
+            h2 {
+                margin: 0;
+            }
+
+            br {
+                display: block;
+                content: '';
+                margin-top: 0.8em;
+
+            }
+        </style>
+    </head>
+    <body>
+        <form id="run2018">
+            <h2>Tarcian Run 2018 Registration Form</h2>
+            
+            <br />
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <br />
+
+            <label>Category:</label>
+
+            <input type="radio" id="public" name="category">
+            <label for="public">Public</label>
+            
+            <input type="radio" id="student-staff" name="category">
+            <label for="student-staff">Student/Staff</label>
+
+            <input type="radio" id="tar-alumni" name="category">
+            <label for="tar-alumini">TAR Alumini</label>
+
+            <br />
+
+            <label for="t-shirt-size">T-Shirt Size:</label>
+            <input list="t-shirt-size-list" name="tshirtSize" id="t-shirt-size">
+            <datalist id="t-shirt-size-list">
+                <option value="S">
+                <option value="M">
+                <option value="L">
+                <option value="XL">
+            </datalist>
+            
+            <br />
+
+            <label for="contact">Contact</label>
+            <input type="text" id="contact" name="contact">
+
+            <br />
+
+            <label for="email">Email</label>
+            <input type="email">
+            
+            <br />
+
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Clear Form">
+        </form>
+    </body>
+</html>
